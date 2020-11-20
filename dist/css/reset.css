@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* css reset */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  font: 14px "微软雅黑",Arial;
+  background: #fff; }
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: normal;
+  /* 取消默认的加粗样式 */
+  font-size: 100%; }
+
+i, em {
+  font-style: normal;
+  /* 取消默认的倾斜样式 */ }
+
+li {
+  list-style: none;
+  /* 取消默认的项目符号样式 */ }
+
+a {
+  color: #333333;
+  text-decoration: none;
+  /* 取消默认的下划线样式 */ }
+
+input {
+  outline: none;
+  /* 取消默认的选中焦点框样式 */ }
+
+img {
+  vertical-align: middle; }
+
+.clearfix {
+  *zoom: 1;
+  /* 解决IE7以下版本的塌陷问题 */ }
+
+.clearfix::after {
+  content: ' ';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both; }
+
+.mb50 {
+  margin-bottom: 50px; }
