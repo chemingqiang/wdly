@@ -4,36 +4,74 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>维多利亚的秘密</title>
-	<link rel="stylesheet" href="../dist/css/style.css">
-	<link rel="stylesheet" href="../dist/css/reset.css">
+	<link rel="stylesheet" href="../dist/css/style.css"><!-- 主页样式 -->
+	<link rel="stylesheet" href="../dist/css/reset.css"><!-- 清除样式 -->
+	<link rel="stylesheet" href="../dist/css/swiper.css"><!-- swiper插件 -->
+	<link rel="stylesheet" href="../font/iconfont.css">
 </head>
 <body>
+	<!-- 整体 -->
 	<div id="app">
+		<!-- 头部 分为3块 -->
 		<div id="header">
+			<!-- 头部第一块 -->
 			<div class="header-1">
+				<!-- 头部第一块最左边 -->
 				<ul class="header-logo">
-
+					<li class="header-1-l">
+						<a href="#">
+							VICTORIA'S<br>SECRET
+						</a>
+					</li>
+					<li class="header-1-l">
+						<a href="#">
+							BEAUTY
+						</a>
+					</li>
+					<li class="header-1-l">
+						<a href="#">
+							<i class=" iconfont icon-logo-pink-three-lines
+							" >
+							</i>
+						</a>
+					</li>
 				</ul>
-				<div>
-					插件
+				<!-- 头部第一块中部插件位置 -->
+				<!-- <div class="header-m"> -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">新客注册立享20元优惠</div>
+						<div class="swiper-slide">无忧退货：全场退货</div>
+						<div class="swiper-slide">单笔订单实付满10元优惠1元</div>
+					</div>
+					<!-- 如果需要导航按钮 -->
+					<div class="swiper-button-prev" ></div>
+					<div class="swiper-button-next"></div>
+				
 				</div>
+				<!-- </div> -->
 				<div>
 					<div class="order-search">
 						<span>
-							<i class=" iconfont">&#xe60f;</i>
+							<i class=" iconfont icon-dingdan"></i>
 							订单查询
 						</span>
 						<span>
-							<i class=" iconfont">&#xe60f;</i>
-							订单查询
+							<i class=" iconfont icon-fujin"></i>
+							在线客服
 						</span>
 						<span>
-							<i class=" iconfont">&#xe60f;</i>
-							订单查询
+							<i class=" iconfont icon-wode"></i>
+							注册 登录
+						</span>
+						<span>
+							<i class=" iconfont icon-gouwuche"></i>
+							购物袋
 						</span>
 					</div>
 				</div>
 			</div>
+			<!-- 头部第二块 -->
 			<div class="header-2">
 				<div class="menu-info">
 					<div class="logo">
@@ -42,15 +80,114 @@
 					</a>
 					</div>
 					<div class="search-pc">
-						<i class="iconfont">&#xe60e;</i>
+						<i class="iconfont icon-search"></i>
 						<input type="text" placeholder="搜索">
 					</div>
 				</div>
 			</div>
+			<!-- 头部第三块 -->
 			<div class="header-3">
-
+				<ul>
+					<li>
+						<span><a href="#" target="_blank">新品！</a></span>
+					</li>
+					<li>
+						<span><a href="#" target="_blank">文胸</a></span>
+						<!-- 下拉列表 -->
+						<!-- <div class="section">
+							<div class="section-1">
+								<div class="options">
+									<h6>全部文胸&gt;</h6>
+									<p>文胸尺码指南</p>
+								</div>
+								<div class="options">
+									<h6>潮流热卖</h6>
+									<p>杨幂代言商品</p>
+									<p>杨幂代言商品</p>
+									<p>杨幂代言商品</p>
+									<p>杨幂代言商品</p>
+									<p>杨幂代言商品</p>
+									<p>杨幂代言商品</p>
+									<p>杨幂代言商品</p>
+								</div>
+								<div class="options">
+									<h6>按款式</h6>
+									<p>无钢圈</p>
+									<p>3/4罩杯</p>
+									<p>性感深V</p>
+									<p>蕾丝</p>
+									<p>全罩杯</p>
+									<p>半罩杯</p>
+									<p>可拆卸肩带</p>
+									<p>运动文胸</p>
+								</div>
+								<div class="options">
+									<h6>按效果</h6>
+									<p>超薄型</p>
+									<p>聚拢衬垫</p>
+									<p>轻薄衬垫</p>
+								
+								
+								</div>
+								<li>
+									<h6>按系列</h6>
+									<p>Dream Angels系列</p>
+									<p>T-Shirt系列</p>
+									<p>Body&nbsp;By&nbsp;Victoria系列</p>
+									<p>lncredible系列</p>
+									<p>Sexy&nbsp;lllusions系列</p>
+									<p>Very &nbsp;Sexy系列</p>
+									<p>Luxe&nbsp;Lingerie系列</p>
+									<p>运动文胸</p>
+								</li>
+							</div>
+						</div> -->
+					</li>
+					<li>
+						<span><a href="#" target="_blank">内裤</a></span>
+					</li>
+					<li>
+						<span><a href="#" target="_blank">性感睡衣</a></span>
+					</li>
+					<li>
+						<span><a href="#" target="_blank">舒适睡衣</a></span>
+					</li>
+					<li>
+						<span><a href="#" target="_blank">美妆<i></i>配饰</a></span>
+					</li>
+					<li>
+						<span><a href="#" target="_blank">维密PINK</a></span>
+					</li>
+					<li>
+						<span><a href="#" target="_blank">运动</a></span>
+					</li>
+					<li>
+						<span><a href="#" target="_blank">关于维密</a></span>
+					</li>
+				</ul>
 			</div>
 		</div>
+		<div id="banner">
+			
+
+		</div>
 	</div>
+
+<script src="../dist/js/swiper.js"></script>
+<script>        
+	var mySwiper = new Swiper ('.swiper-container', {
+	  direction: 'horizontal', // 垂直切换选项
+	  loop: true, // 循环模式选项 
+	  autoplay:{
+		delay:1000,
+		disableOnInteraction: false,
+	  },
+	  // 如果需要前进后退按钮
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+	})        
+	</script>	
 </body>
 </html>

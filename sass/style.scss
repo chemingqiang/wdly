@@ -1,27 +1,78 @@
+// 外部包一个盒子
 #app{
   position: relative;
   overflow: hidden;
   max-width: 100%;
 }
+// 头部
 #header{
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background: yellow;
+  // 头部第一块
   .header-1{
     width: 100%;
     height: 45px;
     line-height: 45px;
     text-align: center;
-    position: relative;
-    padding: 0 5% 0 10.2%;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     background-color: #232323;
+    // 头部第一块最左边块
     .header-logo{
+      display: -webkit-box;
       display: flex;
+      overflow: hidden;
+      // 头部第一块最左边块左边字体
+      .header-1-l{
+        cursor: pointer;
+        text-align: center;
+        font-size: 12px;
+        width: 105px;
+        height: 45px;
+        line-height: 12px;
+        // background-color: white;
+        padding: 10px 0;
+        box-sizing: border-box;
+        a{
+          color:#727272;
+          .icon-logo-pink-three-lines{
+            font-size: 28px;
+            line-height: 45px;
+            color: #db5f92;
+          }
+        }
+      
+      }
+    }
+    .header-m{
+      width: 300px;
+      background-color: pink;
+    }
+    //插件整体样式  中间部分
+    .swiper-container{
+      width: 50%;
+      padding: 0 32px;
+      margin: 0;
+      font-size: 12px;
+      color: #eee;
+     
+      
+    }
+    // 头部第一块最右边块
+    .order-search{
+      font: 12px;
+      color: #fff;
+      span{
+        line-height: 45px;
+        padding: 0 10px;
+        display: inline-block;
+        height: 45px;
+      }
     }
   }
+  // 头部第二块
   .header-2{
     .menu-info{
       width: 972px;
@@ -63,8 +114,54 @@
     }
     
   }
+  // 头部第三块
   .header-3{
+    min-width: 970px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: pink;
+    li{
+      display: inline-block;
+      padding: 0 10px;
+      margin: 0 46px;
+      span{
+        line-height: 45px;
+        display: inline-block;
+      }
+      .section{
+        position: absolute;
+        top: -60px;
+        left: 0;
+        opacity: 0;
+        .section-1{
+          width: 100%;
+          min-width: 972px;
+          height: auto;
+          padding-bottom: 40px;
+          padding-top: 15px;
+          text-align: center;
+          .options{
+            width: 205px;
+            line-height: 30px;
+            display: inline-block;
+            vertical-align: text-top;
+            text-align: left;
+            opacity: 0;
+          }
+        }
+
+
+
+      }
+    }
+  }
+    
 
   }
+  #banner{
 
-}
+  }
