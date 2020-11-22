@@ -8,7 +8,6 @@
 // 头部
 #header{
   width: 100%;
-  // position: fixed;
   top: 0;
   left: 0;
   // 头部第一块
@@ -32,33 +31,31 @@
         font-size: 12px;
         width: 105px;
         height: 45px;
-        line-height: 12px;
-        // background-color: white;
-        padding: 10px 0;
-        box-sizing: border-box;
         a{
-          color:#727272;
+          color:#ffffff;
           .icon-logo-pink-three-lines{
             font-size: 28px;
             line-height: 45px;
             color: #db5f92;
           }
-        }
-      
+        } 
       }
     }
+
     .header-m{
-      width: 300px;
-      background-color: pink;
+      width: 560px;
     }
     //插件整体样式  中间部分
     .swiper-container{
-      width: 50%;
-      padding: 0 32px;
+      width: 560px;
+      height: 45px;
+      padding: 0 60px;
       margin: 0;
       font-size: 12px;
       color: #eee;
-     
+     .swiper-button-prev{
+       color: #eee;
+     }
       
     }
     // 头部第一块最右边块
@@ -70,6 +67,10 @@
         padding: 0 10px;
         display: inline-block;
         height: 45px;
+        cursor: pointer;
+      }
+      span:hover{
+        background-color: #000000;
       }
     }
   }
@@ -118,64 +119,62 @@
   // 头部第三块
   .header-3{
     min-width: 970px;
-    height: 50px;
+    /* height: 50px; */
     line-height: 50px;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     text-align: center;
     border-bottom: 1px solid #e1e1e1;
     background-color: pink;
-    li{
-      display: inline-block;
-      padding: 0 10px;
-      margin: 0 46px;
-      span{
-        line-height: 45px;
-        display: inline-block;
-        
-        
-      }
-      span:hover .section{
-        display: block;
-      }
-      .section{
-        width: 100%;
-        position: absolute;
-        
-        left: 0;
-        opacity: 1;
-        /* 112 */
-        height: 500px;
-        background-color: lightblue;
-        display: none;
-        .section-1{
-          width: 100%;
-          min-width: 972px;
-          height: auto;
-          padding-bottom: 40px;
-          padding-top: 15px;
-          text-align: center;
-          .options{
-            width: 205px;
-            line-height: 30px;
-            display: inline-block;
-            vertical-align: text-top;
-            text-align: left;
-          }
-        }
-
-
-
-      }
-    }
-  }
     
-
   }
+  li{
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 46px;
+     
+  }
+  span{
+    line-height: 45px;
+    display: inline-block;
+  }
+
+  .section{
+    width: 100%;
+    position: absolute;
+    
+    left: 0;
+    opacity: 1;
+    /* 112 */
+    height: 500px;
+    background-color: lightblue;
+    display: none;
+  
+  }
+  span:hover .section{
+    display: block;
+  }
+  .section .section-1{
+    width: 100%;
+    min-width: 972px;
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 15px;
+    text-align: center;
+        /* position: relative; */
+  }
+
+  .section .section-1 .options{
+    width: 205px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: left;
+  }
+  // 身体部分
   #banner{
     overflow: hidden;
     margin: 0 auto;
-    background-color: lightblue;
     position: relative;
     .banner-1{
       padding: 12px 0 0 0;
@@ -185,8 +184,8 @@
         img{
           width: 100%;
           vertical-align: middle;
+          
         }
-      
       }
       div{
         position: absolute;
@@ -196,8 +195,7 @@
           display: block;
           color: white;
         }
-      }
-      
+      }  
     }
     .kong{
       a{
@@ -206,6 +204,15 @@
           width: 100%;
         }
       }
+    }
+    .banner-2{ 
+      overflow: hidden;
+        img{
+          width: 100%;
+          vertical-align: middle;
+          border: 0;
+          margin: 0 auto;
+        }
     }
     .banner-3{
       a{
@@ -217,3 +224,94 @@
       }
     }
   }
+  // 尾巴部分
+  #footer{
+    background-color: #232323;
+    overflow: hidden;
+    // 尾巴第一部分
+    .fnav{
+      display: flex;
+      max-width: 1230px;
+      margin: 0 auto;
+      color: #fff;
+      padding-top: 40px;
+      margin-bottom: 10px;
+      // 尾巴第一部分左边
+      .footer-left{
+        width: 79%;
+        border-right: solid 1px #000;
+        display: flex;
+        .footer-left-1{
+          width: 100px;
+          margin-right: 9%;
+          line-height: 31px;
+          a{
+            display: inline-block;
+            color: white;
+            box-sizing: border-box;
+            padding-right: 10px;
+          }
+        }
+        .footer-left-2{
+          line-height: 31px;
+          display: inline-block;
+          margin-right: 9%;
+          vertical-align: top;
+          text-align: center;
+          font-size: 12px;
+          a{
+            display: inline-block;
+            color: white;
+          }
+
+        }
+        .footer-left-3{
+          line-height: 31px;
+          display: inline-block;
+          margin-right: 9%;
+          font-size: 12px;
+          a{
+            display: inline-block;
+            color: white;
+            i{
+              box-sizing: border-box;
+              padding-right: 10px;
+              padding-top: 10px;
+            }
+          }
+      }
+     }
+    }
+    // 尾巴第一部分右边
+    .footer-right{
+      width: 20%;
+      padding-left: 2%;
+      line-height: 31px;
+      .icon-dingwei{
+        font-size: 32px;
+        color: #ffffff;
+        text-align: center;
+        box-sizing: border-box;
+        padding-left: 10px;
+      }
+    }
+  }
+  // 尾巴第二部分
+  .copyright{
+    box-sizing: border-box;
+    padding-top: 21px;
+    text-align: center;
+    p:nth-child(1){
+      line-height: 22px;
+      font-size: 12px;
+    }
+    p{
+      color: white;
+      font-size: 12px;
+      line-height: 35px;
+      img{
+        width: 15px;
+      }
+    }
+  }
+}
