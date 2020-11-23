@@ -49,8 +49,7 @@
     .swiper-container{
       width: 560px;
       height: 45px;
-      padding: 0 60px;
-      margin: 0;
+      margin: 0 auto;
       font-size: 12px;
       color: #eee;
      .swiper-button-prev{
@@ -118,21 +117,23 @@
   }
   // 头部第三块
   .header-3{
+    z-index: 99;
     min-width: 970px;
-    /* height: 50px; */
     line-height: 50px;
     margin: 0 auto;
-    /* position: relative; */
+    position: relative;
     text-align: center;
     border-bottom: 1px solid #e1e1e1;
-    background-color: pink;
-    
+    opacity: 0.9;
   }
   li{
     display: inline-block;
     padding: 0 10px;
     margin: 0 46px;
      
+  }
+  .a li:hover .section{
+    display: block;
   }
   span{
     line-height: 45px;
@@ -142,17 +143,10 @@
   .section{
     width: 100%;
     position: absolute;
-    
     left: 0;
-    opacity: 1;
-    /* 112 */
     height: 500px;
-    background-color: lightblue;
+    background-color: #eee;
     display: none;
-  
-  }
-  span:hover .section{
-    display: block;
   }
   .section .section-1{
     width: 100%;
@@ -161,9 +155,7 @@
     padding-bottom: 40px;
     padding-top: 15px;
     text-align: center;
-        /* position: relative; */
   }
-
   .section .section-1 .options{
     width: 205px;
     line-height: 30px;
@@ -171,11 +163,14 @@
     vertical-align: text-top;
     text-align: left;
   }
+}
   // 身体部分
   #banner{
+    z-index: 98;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+    z-index: 98;
     .banner-1{
       padding: 12px 0 0 0;
       box-sizing: border-box;
@@ -280,9 +275,10 @@
             }
           }
       }
+
+
      }
-    }
-    // 尾巴第一部分右边
+      // 尾巴第一部分右边
     .footer-right{
       width: 20%;
       padding-left: 2%;
@@ -295,7 +291,9 @@
         padding-left: 10px;
       }
     }
-  }
+    }
+   
+  
   // 尾巴第二部分
   .copyright{
     box-sizing: border-box;

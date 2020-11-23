@@ -37,8 +37,7 @@
     #header .header-1 .swiper-container {
       width: 560px;
       height: 45px;
-      padding: 0 60px;
-      margin: 0;
+      margin: 0 auto;
       font-size: 12px;
       color: #eee; }
       #header .header-1 .swiper-container .swiper-button-prev {
@@ -86,18 +85,20 @@
         margin-top: -2px;
         border: none; }
   #header .header-3 {
+    z-index: 99;
     min-width: 970px;
-    /* height: 50px; */
     line-height: 50px;
     margin: 0 auto;
-    /* position: relative; */
+    position: relative;
     text-align: center;
     border-bottom: 1px solid #e1e1e1;
-    background-color: pink; }
+    opacity: 0.9; }
   #header li {
     display: inline-block;
     padding: 0 10px;
     margin: 0 46px; }
+  #header .a li:hover .section {
+    display: block; }
   #header span {
     line-height: 45px;
     display: inline-block; }
@@ -105,127 +106,126 @@
     width: 100%;
     position: absolute;
     left: 0;
-    opacity: 1;
-    /* 112 */
     height: 500px;
-    background-color: lightblue;
+    background-color: #eee;
     display: none; }
-  #header span:hover .section {
-    display: block; }
   #header .section .section-1 {
     width: 100%;
     min-width: 972px;
     height: auto;
     padding-bottom: 40px;
     padding-top: 15px;
-    text-align: center;
-    /* position: relative; */ }
+    text-align: center; }
   #header .section .section-1 .options {
     width: 205px;
     line-height: 30px;
     display: inline-block;
     vertical-align: text-top;
     text-align: left; }
-  #header #banner {
-    overflow: hidden;
-    margin: 0 auto;
-    position: relative; }
-    #header #banner .banner-1 {
-      padding: 12px 0 0 0;
-      box-sizing: border-box; }
-      #header #banner .banner-1 a {
-        display: block; }
-        #header #banner .banner-1 a img {
-          width: 100%;
-          vertical-align: middle; }
-      #header #banner .banner-1 div {
-        position: absolute;
-        left: 486px;
-        top: 500px; }
-        #header #banner .banner-1 div a {
-          display: block;
-          color: white; }
-    #header #banner .kong a {
+
+#banner {
+  z-index: 98;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  z-index: 98; }
+  #banner .banner-1 {
+    padding: 12px 0 0 0;
+    box-sizing: border-box; }
+    #banner .banner-1 a {
       display: block; }
-      #header #banner .kong a img {
-        width: 100%; }
-    #header #banner .banner-2 {
-      overflow: hidden; }
-      #header #banner .banner-2 img {
-        width: 100%;
-        vertical-align: middle;
-        border: 0;
-        margin: 0 auto; }
-    #header #banner .banner-3 a {
-      display: block; }
-      #header #banner .banner-3 a img {
+      #banner .banner-1 a img {
         width: 100%;
         vertical-align: middle; }
-  #header #footer {
-    background-color: #232323;
+    #banner .banner-1 div {
+      position: absolute;
+      left: 486px;
+      top: 500px; }
+      #banner .banner-1 div a {
+        display: block;
+        color: white; }
+  #banner .kong a {
+    display: block; }
+    #banner .kong a img {
+      width: 100%; }
+  #banner .banner-2 {
     overflow: hidden; }
-    #header #footer .fnav {
-      display: flex;
-      max-width: 1230px;
-      margin: 0 auto;
-      color: #fff;
-      padding-top: 40px;
-      margin-bottom: 10px; }
-      #header #footer .fnav .footer-left {
-        width: 79%;
-        border-right: solid 1px #000;
-        display: flex; }
-        #header #footer .fnav .footer-left .footer-left-1 {
-          width: 100px;
-          margin-right: 9%;
-          line-height: 31px; }
-          #header #footer .fnav .footer-left .footer-left-1 a {
-            display: inline-block;
-            color: white;
+    #banner .banner-2 img {
+      width: 100%;
+      vertical-align: middle;
+      border: 0;
+      margin: 0 auto; }
+  #banner .banner-3 a {
+    display: block; }
+    #banner .banner-3 a img {
+      width: 100%;
+      vertical-align: middle; }
+
+#footer {
+  background-color: #232323;
+  overflow: hidden; }
+  #footer .fnav {
+    display: flex;
+    max-width: 1230px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 40px;
+    margin-bottom: 10px; }
+    #footer .fnav .footer-left {
+      width: 79%;
+      border-right: solid 1px #000;
+      display: flex; }
+      #footer .fnav .footer-left .footer-left-1 {
+        width: 100px;
+        margin-right: 9%;
+        line-height: 31px; }
+        #footer .fnav .footer-left .footer-left-1 a {
+          display: inline-block;
+          color: white;
+          box-sizing: border-box;
+          padding-right: 10px; }
+      #footer .fnav .footer-left .footer-left-2 {
+        line-height: 31px;
+        display: inline-block;
+        margin-right: 9%;
+        vertical-align: top;
+        text-align: center;
+        font-size: 12px; }
+        #footer .fnav .footer-left .footer-left-2 a {
+          display: inline-block;
+          color: white; }
+      #footer .fnav .footer-left .footer-left-3 {
+        line-height: 31px;
+        display: inline-block;
+        margin-right: 9%;
+        font-size: 12px; }
+        #footer .fnav .footer-left .footer-left-3 a {
+          display: inline-block;
+          color: white; }
+          #footer .fnav .footer-left .footer-left-3 a i {
             box-sizing: border-box;
-            padding-right: 10px; }
-        #header #footer .fnav .footer-left .footer-left-2 {
-          line-height: 31px;
-          display: inline-block;
-          margin-right: 9%;
-          vertical-align: top;
-          text-align: center;
-          font-size: 12px; }
-          #header #footer .fnav .footer-left .footer-left-2 a {
-            display: inline-block;
-            color: white; }
-        #header #footer .fnav .footer-left .footer-left-3 {
-          line-height: 31px;
-          display: inline-block;
-          margin-right: 9%;
-          font-size: 12px; }
-          #header #footer .fnav .footer-left .footer-left-3 a {
-            display: inline-block;
-            color: white; }
-            #header #footer .fnav .footer-left .footer-left-3 a i {
-              box-sizing: border-box;
-              padding-right: 10px;
-              padding-top: 10px; }
-    #header #footer .footer-right {
+            padding-right: 10px;
+            padding-top: 10px; }
+    #footer .fnav .footer-right {
       width: 20%;
       padding-left: 2%;
       line-height: 31px; }
-      #header #footer .footer-right .icon-dingwei {
+      #footer .fnav .footer-right .icon-dingwei {
         font-size: 32px;
         color: #ffffff;
         text-align: center;
         box-sizing: border-box;
         padding-left: 10px; }
-  #header .copyright {
+  #footer .copyright {
     box-sizing: border-box;
     padding-top: 21px;
     text-align: center; }
-    #header .copyright p:nth-child(1) {
+    #footer .copyright p:nth-child(1) {
       line-height: 22px;
       font-size: 12px; }
-    #header .copyright p {
+    #footer .copyright p {
       color: white;
       font-size: 12px;
       line-height: 35px; }
-      #header .copyright p img {
+      #footer .copyright p img {
         width: 15px; }
