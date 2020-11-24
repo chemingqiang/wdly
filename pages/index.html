@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>维多利亚的秘密</title>
-	<link rel="stylesheet" href="../dist/css/style.css"><!-- 主页样式 -->
-	<link rel="stylesheet" href="../dist/css/reset.css"><!-- 清除样式 -->
-	<link rel="stylesheet" href="../dist/css/swiper.css">  <!-- swiper插件 -->
-	<script src="../dist/js/jquery-1.8.3.js"></script><!-- jquery插件 -->
-	<link rel="stylesheet" href="../font/iconfont.css"><!-- 矢量图标 -->
-	<script src="../dist/js/index.js"></script><!-- 事件js -->
+	<link rel="stylesheet" href="./css/style.css"><!-- 主页样式 -->
+	<link rel="stylesheet" href="./css/reset.css"><!-- 清除样式 -->
+    <link rel="stylesheet" href="./font/iconfont.css"><!-- 矢量图标 -->
+	<link rel="stylesheet" href="./css/shopping.css">
+	<link rel="stylesheet" href="./css/zhuce.css"><!-- 注册页样式 -->
+	<link rel="stylesheet" href="./css/swiper.css">
 </head>
 <body>
 	<!-- 整体 -->
@@ -63,7 +63,7 @@
 							<i class=" iconfont icon-fujin"></i>
 							在线客服
 						</span>
-						<span>
+						<span class="dengl">
 							<i class=" iconfont icon-wode"></i>
 							注册 登录
 						</span>
@@ -129,8 +129,6 @@
 									<p>超薄型</p>
 									<p>聚拢衬垫</p>
 									<p>轻薄衬垫</p>
-								
-								
 								</div>
 								<div class="options">
 									<h6>按系列</h6>
@@ -219,6 +217,28 @@
 				</ul>
 			</div>
 		</div>
+		<!-- 注册页登录 -->
+		<div id="denglu">
+			<div class="denglu-left">
+				<h4>登录</h4>
+				<p>手机号码：: <br><input type="text" placeholder="请输入手机号码"></p>
+				<p>手机验证码：<br><input type="text" placeholder="请输入短信验证码"><button style="display: inline-block; "><a href="#">获取验证码</a></button></p>
+				<p class="btn"><a href="#">使用密码登录</a></p>
+				<div class="dengluanniu"><a href="#">登录</a></div>
+				<a href="#"><img src="../img/CRM-banner-PC_03.9d9775f1e2ae7ef854505f813740a9a0.jpg" alt=""></a>
+			</div>
+			<div class="denglu-right">
+				<h4>注册</h4>
+				<p>手机号码：: <br><input type="text" class="user" placeholder="请输入手机号码"></p>
+				<p>图形验证码：<br><input type="text" placeholder="请输入右侧图形的计算结果"><button><a href="#">放入验证码</a></button></p>
+				<p>手机验证码：<br><input type="text" placeholder="请输入短信验证码"><button><a href="#">获取验证码</a></button></p>
+				<p>密码: <br><input type="text" class="pass" placeholder="请输入密码"></p>
+				<p>密码: <br><input type="text" class="pass" placeholder="请输入确认密码"></p>
+				<input type="checkbox" style="width: 40px; height: 40px;"><i>本人确认收到网站条款和隐私政策,并同意victoria 's Secret按照隐私政策中的规定收集、使用并在全球范围内转移本人的个人信息，包括通过电子邮件和/或短信向本人发送广告．推广活动等信息。</i>
+				<div class="zhuce"><a href="#">注册</a></div>
+			</div>
+		</div>
+		<div class="mask"></div> <!--  遮罩层 -->
 		<!-- 身体部分 -->
 		<div id="banner">
 			<!-- 享受假日礼遇为你 -->
@@ -444,8 +464,13 @@
 				<p>沪ICP备16041657号<img src="../img/beian.d0289dc0a46fc5b15b3363ffa78cf6c7.png" alt=""> 沪公网安备 31010102004897号<img src="../img/lz2.86c5601ba590afee1ef021419d5869ab.png" alt="">上海工商</p>
 			</div>
 		</div>
+		
 	</div>
-<script src="../dist/js/swiper.js"></script>
+	<script src="./js/jquery-1.8.3.js"></script><!-- jquery插件 -->
+	<script src="./js/swiper.js"></script>
+	<script src="./js/index.js"></script><!-- 事件js -->
+	<script src="./js/utils.js"></script>
+	<script src="./js/public.js"></script>
 <script>        
 	var mySwiper = new Swiper ('.swiper-container', {
 		direction: 'horizontal', // 垂直切换选项

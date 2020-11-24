@@ -108,6 +108,7 @@
     left: 0;
     height: 500px;
     background-color: #eee;
+    opacity: 0.9;
     display: none; }
   #header .section .section-1 {
     width: 100%;

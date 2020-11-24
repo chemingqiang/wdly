@@ -1,0 +1,79 @@
+#denglu{
+    width: 900px;
+    height: 700px;
+    z-index: 99;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    z-index: 99;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    display: none;
+    .denglu-left{
+        border-right: solid 1px black;
+        box-sizing: border-box;
+        margin: 50px  0  20px  70px;
+        padding-right: 90px;
+        p{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px  0;
+            input{
+                height: 25px;
+            }
+            button{
+                width: 80px;
+                height: 25px;
+            }
+        }
+        .dengluanniu{
+            width: 250px;
+            height: 35px;
+            background-color: pink;
+            line-height: 35px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        img{
+            width: 300px;
+        }
+    }
+    .denglu-right{
+        box-sizing: border-box;
+        margin: 50px  70px  20px  0;
+        padding-left: 50px;
+        p{
+            box-sizing: border-box;
+            padding: 10px  0;
+            input{
+                height: 25px;
+            }
+            button{
+                width: 80px;
+                height: 25px;
+            
+            }
+        }
+        .zhuce{
+            width: 250px;
+            height: 35px;
+            background-color: pink;
+            line-height: 35px;
+            text-align: center;
+            margin: 20px 0;
+        }
+    }
+
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+  }

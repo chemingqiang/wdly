@@ -1,0 +1,459 @@
+.shopping-1{
+    
+.sg-1{
+    line-height: 43px;
+    color: #666666;
+    box-sizing: border-box;
+    padding: 13px 0 0 268px;
+}
+.shoppingmain{
+    display: flex;
+    // background-color: lightcoral;
+    box-sizing: border-box;
+    padding: 0  0 41px 0;
+    margin-left: 208px;
+    margin-right: 208px;
+    border-bottom: solid 1px red;
+    .shoppingmain-left{
+        margin-left: 208px;
+        padding: 0 5px  0  30px; 
+        .sg-2{
+            box-sizing: border-box;
+            margin-bottom: 11px;
+            background-color:#e1e1e1;
+            border: 1px solid #e1e1e1;
+            img{
+                box-sizing: border-box;
+              padding: 4px;
+            }
+            img:hover{
+                border: 1px solid black;
+            }
+        }
+    }
+    .shoppingmain-main{
+        max-width: 563px;
+        width: 100%;
+        cursor: none;
+        img{
+            border: 0;
+        }
+    }
+    .shoppingmain-right{
+        box-sizing: border-box;
+        padding-left: 71px;
+        .sg-3{
+            box-sizing: border-box;
+            padding: 6px 0 0 15px;
+            color: #000000;
+            line-height: 33px;
+        }
+        h6{
+            box-sizing: border-box;
+            padding-left:15px;
+            font-size: 18px;
+            color: #000000;
+        }
+        .sg-4{
+            box-sizing: border-box;
+            padding-left:15px;
+            line-height: 54px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sg-5{
+            box-sizing: border-box;
+            padding: 12px 0 0 15px;
+            line-height: 44px;
+            color: #000000;
+            font-size: 12px;
+        }
+        .sg-6{
+            box-sizing: border-box;
+            padding-left: 15px;
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+            i{
+                
+                img{
+                    width: 100%;
+                    border: solid 1px #ffffff;
+                }
+                img:hover{
+                    border: solid 1px #000000;
+                    background: burlywood;
+                    padding: 3px;
+                }
+            }
+        }
+        // 尺码
+        .sg-7{
+            box-sizing: border-box;
+            padding: 6px 0 0 15px;
+            line-height: 48px;
+            display: flex;
+            justify-content:space-between;
+            font-size: 12px;
+
+        }
+        // SM
+        .sg-8{
+            box-sizing: border-box;
+            padding-left:15px;
+
+            i{
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                border: solid 1px #e1e1e1;
+                margin-right: 10px;
+                line-height: 34px;
+                text-align: center;
+            }
+        }
+        .sg-9{
+            box-sizing: border-box;
+            padding:22px 0 0 15px;
+            font-size: 12px;       
+        }
+        .sg-10{
+            box-sizing: border-box;
+            padding-left:15px;
+            i{
+                display: inline-block;
+                width: 33px;
+                height: 33px;
+                border: solid 1px #e1e1e1;
+                background-color: #fff;
+                line-height: 33px;
+                text-align: center;
+                font-size: 20px;
+                margin-right: 12px;
+                margin-left: 12px;
+            }
+        }
+        .sg-11{
+            box-sizing: border-box;
+            padding: 20px 0 20px 15px;
+            button{
+               width: 184px;
+               height: 40px;
+               background-color: #ef5f96;
+               border: 0; 
+            }
+            i{
+                padding-left: 10px;
+            }
+        }
+        .sg-12{
+            border-top: solid 1px #e1e1e1;
+            border-bottom: solid 1px #e1e1e1;
+            h6{
+                line-height: 56px;
+                font-size: 12px;
+            }
+            p{
+                line-height: 19px;
+                padding-bottom: 35px;
+            }
+        }
+        .sg-13{
+            box-sizing: border-box;
+            padding-left:15px;
+            line-height: 56px;
+        }
+        .sg-14{
+            box-sizing: border-box;
+            padding-left:15px;
+            line-height: 28px;
+        }
+    }
+    
+}
+
+}
+.shopping-2{
+    overflow: hidden;
+    h4{
+        line-height: 64px;
+        color: #000000;
+        box-sizing: border-box;
+        padding: 22px 0 0 228px;
+    }
+    }
+    .shopping-2-main{
+        display: flex;
+        box-sizing: border-box;
+        padding:  0 0 41px 0;
+        margin-left: 208px;
+        margin-right: 208px;
+        border-bottom: solid 1px red;
+        .shopping-2-left{
+            .slider {
+                width: 304px;
+                height: 460px;
+                position: relative;
+                overflow: hidden;
+                .slider-img {
+                    width: 304px;
+                    height: 404px;
+                    li {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        img{
+                            width: 304px;
+                            height: 404px;
+                        }
+                    }
+                }
+                .slider-ctrl {
+                    text-align: center;
+                    padding-top: 10px;
+                    position: relative;
+                    .slider-ctrl-con {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../img/icon.png) no-repeat -24px -780px;
+                        text-indent: -99999px;
+                        margin: 0 5px;
+                        cursor: pointer;
+                        // background-color: #eee;
+                    }
+                    .slider-ctrl-con.current {
+                        background-position: -24px -760px;
+                    }
+                    .prev,.next {
+                        position: absolute;
+                        width: 30px;
+                        height: 35px;
+                    }
+                    .prev {
+                        left: 10px;
+                        position: absolute;
+                        left: 0;
+                    }
+                    .next {
+                        right: 10px;
+                        background-position: 0 -44px;
+                    }
+                }
+            }        
+        }
+        .shopping-2-right{
+            margin-left: 21px;
+            .s2r-1{
+                line-height: 13px;
+                color: #000000;
+            }
+            .s2r-2{
+                padding-top: 7px;
+                line-height: 22px;
+                font-size: 16px;
+                font-weight: bolder;
+            }
+            .s2r-3{
+                padding-top: 7px;
+                line-height: 33px;
+                font-size: 16px;
+                border-bottom: dashed 1px #e1e1e1;
+            }
+            .s2r-4{
+                display: flex;
+                i{
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    border: solid 1px #ffffff;
+                    margin: 35px 11px 35px  0;
+                }
+                i:hover{
+                    border: solid 1px #000000;
+                }
+            }
+            .s2r-5{
+                display: flex;
+                i{
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    border: solid 1px #ffffff;
+                    margin: 0 11px 35px  0;
+                    line-height: 32px;
+                    text-align: center;
+                }
+                i:hover{
+                    border: solid 1px #e1e1e1;
+                }
+            }
+            .s2r-6{
+                display: flex;
+                i{
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    border: solid 1px #ffffff;
+                    margin: 0 11px 35px  0;
+                    line-height: 32px;
+                    text-align: center;
+                }
+            }
+            button{
+                width: 154px;
+                height: 35px;
+                background-color: #ef5f96;
+                line-height: 35px;
+                text-align: center;
+                color: #ffffff;
+                border: 0;
+            }
+        }
+        
+    }
+// 您可能会喜欢
+.shopping-3{
+    // background-color: pink;
+    overflow: hidden;
+    h4{
+        font-weight: bolder;
+        padding: 32px 0 30px  238px;
+    }
+    .shopping-3-main{
+        margin:  0 auto;
+        max-width: 1380px;
+        min-height: 500px;
+        // position: relative;
+        padding: 0 30px 0 30px;
+        overflow: hidden;
+        border-bottom: solid 1px red;
+        display: flex;
+        .s3m-1{
+            display: flex;
+            overflow: hidden;
+            margin: 0 auto;
+            .mask1{
+                overflow: hidden;
+                z-index: 98;
+                // 分页器
+        .swiper-container1 {
+            width: 230px;
+            height: 430px;
+            // background-color: lightgreen;
+            margin: 0 0 0 20px;
+            border: solid 1px #ffffff;
+            overflow: hidden;
+            z-index: 98;
+            .swiper-wrapper{
+                // overflow: hidden;
+                position: relative;
+                z-index: 98;
+            .swiper-slide{
+                text-align: center;
+                line-height: 20px;
+                overflow: hidden;
+            img{
+                width: 230px;
+                height: 380px;
+                border: 0;
+                box-sizing: border-box;
+                
+                }
+            } 
+            .swiper-pagination-bullet{
+                margin: 0 auto;
+                width: 10px;
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+                z-index: 99;
+            }
+            }
+        }
+        .swiper-container1:hover{
+            border: solid 1px #000000;
+        } 
+
+    }
+ }
+    }
+}
+// 尺码测量
+.shopping-4{
+    box-sizing: border-box;
+    padding:  0 0 41px 0;
+    margin-left: 208px;
+    margin-right: 208px;
+    border-bottom: solid 1px red;
+    h4{
+        font-size: 20px;
+        font-weight: bolder;
+        line-height: 107px;
+    }
+    .s4-1{
+        font-style: 14px;
+        line-height: 53px;
+        padding-top: 6px;
+    }
+    .shopping-4-main{
+        display: flex;
+        .s4m-l{
+        img{
+            width: 241px;
+        }
+        .s4m-l-1{
+          padding-top: 20px;
+          line-height: 60px;
+          color: #000;
+          font-style: 12px;
+          text-align: center;  
+        }
+    }
+        .s4m-r{
+            margin-left: 30px;
+            table{
+                border: 1px;
+                border-collapse: collapse;
+                thead{
+                    tr{
+                        width: 929px;
+                        th{
+                            background-color: #6b6b6b;
+                            width: 283px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            color: #ffffff; 
+                            border: 0;
+                            // border-collapse: collapse;
+                            
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        width: 929px;
+                        td{
+                            // background-color: #6b6b6b;
+                            width: 283px;
+                            height: 45px;
+                            line-height: 45px;
+                            text-align: center;
+                            border: 1px solid #666666;
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                        }
+                    }
+                }
+            }
+            p{
+                line-height: 44px;
+                color: #000000;
+            }
+
+        }
+    }
+
+}
+

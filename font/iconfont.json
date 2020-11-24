@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2796263",
+      "name": "return",
+      "font_class": "return",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "6443653",
+      "name": "礼物盒子",
+      "font_class": "jinlingyingcaiwangtubiao63",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "7450517",
+      "name": "shipping-32-32",
+      "font_class": "shipping--",
+      "unicode": "e786",
+      "unicode_decimal": 59270
+    },
+    {
+      "icon_id": "17098114",
+      "name": "Shipping 1 - 24px",
+      "font_class": "Shipping1-24px",
+      "unicode": "e7fe",
+      "unicode_decimal": 59390
+    },
+    {
       "icon_id": "726040",
       "name": "定位",
       "font_class": "dingwei",

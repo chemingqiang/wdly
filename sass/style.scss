@@ -140,13 +140,13 @@
     line-height: 45px;
     display: inline-block;
   }
-
   .section{
     width: 100%;
     position: absolute;
     left: 0;
     height: 500px;
     background-color: #eee;
+    opacity: 0.9;
     display: none;
   }
   .section .section-1{
