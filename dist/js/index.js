@@ -154,6 +154,63 @@ window.onload=function(){
      light()
 
  }
+
+ //放大镜
+  // 获取元素
+  var minBox = document.querySelector('.shoppingmain-main')  //鼠标移入它里面去
+  var mask = document.querySelector('.mask')//控制遮罩层
+  var maxBox = document.querySelector('.maxBox')//要控制显示隐藏
+  var maxImg = document.querySelector('.maxBox img')//里面图片也要操作
+  
+  
+  // 鼠标移动，mask跟随移动
+  minBox.onmousemove = function (ev){
+    var e = ev || event    //事件兼容
+    // 计算msk的定位坐标
+    var maskLeft = e.clientX - offset(minBox).left - mask.clientWidth/2  //⭐⭐自身宽度的一半
+    var maskTop = e.clientY - offset(minBox).top - mask.clientHeight/2  //⭐⭐
+  // 以上实际获得遮罩层left和left值直接赋值给他就可以动
+    // 限制mask移动范围  临界值  最小值最大值
+    if (maskLeft < 0) {
+      //限制最小值
+      maskLeft = 0
+    }
+    if (maskLeft >= (minBox.clientWidth-mask.clientWidth)) {
+      //限制最大值   放照片的盒子宽度包括边框-遮罩层宽度加边框
+      maskLeft = minBox.clientWidth-mask.clientWidth
+    }
+    if (maskTop < 0) {
+      maskTop = 0
+    }
+    if (maskTop >= (minBox.clientHeight-mask.clientHeight)) {
+      maskTop = minBox.clientHeight-mask.clientHeight
+    }
+    //计算遮罩层左边偏移值   ⭐赋值 动
+    mask.style.left = maskLeft + 'px'
+    //计算遮罩层上边偏移值
+    mask.style.top = maskTop + 'px'
+  //比例 大图 小图
+    var scaleX = maskLeft/(minBox.clientWidth-mask.clientWidth)
+    var scaleY = maskTop/(minBox.clientHeight-mask.clientHeight)
+  
+    // 大图也跟随移动  相反他上她下  她上他下
+    maxImg.style.left = -scaleX*(maxImg.clientWidth-maxBox.clientWidth) + 'px'
+    maxImg.style.top = -scaleY*(maxImg.clientHeight-maxBox.clientHeight) + 'px'
+  }
+  //鼠标进入
+  minBox.onmouseenter = function (){
+    //遮罩层以及大盒子转为block出现
+    mask.style.display = 'block'
+    maxBox.style.display = 'block'
+  }
+  //鼠标移开元素时触发
+  minBox.onmouseleave = function (){
+    //遮罩层以及大盒子转为none隐藏
+    mask.style.display = 'none'
+    maxBox.style.display = 'none'
+  }
+
+
 }
 
 //注册登录页

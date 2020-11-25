@@ -6,6 +6,7 @@
     box-sizing: border-box;
     padding: 13px 0 0 268px;
 }
+// 中心3部分
 .shoppingmain{
     display: flex;
     // background-color: lightcoral;
@@ -14,8 +15,10 @@
     margin-left: 208px;
     margin-right: 208px;
     border-bottom: solid 1px red;
+    // 左侧图片列表⭐⭐⭐需要点击事件切换图片
+    overflow: hidden;
     .shoppingmain-left{
-        margin-left: 208px;
+        margin-left: 100px;
         padding: 0 5px  0  30px; 
         .sg-2{
             box-sizing: border-box;
@@ -25,20 +28,68 @@
             img{
                 box-sizing: border-box;
               padding: 4px;
+            }  
             }
-            img:hover{
+            .sg-2:hover{
                 border: 1px solid black;
-            }
         }
     }
+    // 中间图片 也就是需要放大镜的地方⭐⭐⭐
     .shoppingmain-main{
-        max-width: 563px;
-        width: 100%;
+        width: 563px;
+        height: 750px;
         cursor: none;
+        position: relative;
+        float: left;
+        overflow: hidden;
+
         img{
-            border: 0;
+            width: 563px;
+            height: 750px;
+            /* 解决缝隙  浮动也可以*/
+            display: block;
+        }
+            .mask{
+                /* 给图片的一半 */
+                width: 280px;
+                height: 370px;
+                background-color: orange;
+                opacity: 0.4;
+                /* ⭐⭐⭐ */
+                position: absolute;
+                left: 0;
+                top: 0;
+                /* ⭐⭐ 手势*/
+                cursor: move;
+                /* 初始隐藏的 */
+                display: none;
+              }
+        
+    }
+    .maxBox{
+        width: 440px;
+        height: 850px;
+        border: 1px solid green;
+        /* 定位，大盒子通过定位出现 */
+        position: absolute;
+        top: 0;
+        left: 970px;
+        /* ⭐⭐⭐溢出隐藏，通过js调用 */
+        overflow: hidden;
+        /* 先隐藏后通过事件转为block出现 */
+        display: none;
+        img{
+            width: 1126px;
+            height: 1500px;
+            /* 不让留下间隔 */
+            display: block;
+            /* ⭐⭐⭐⭐⭐改变left top就能改变位置了 */
+            position: absolute;
+            left: 0;
+            top: 0;
         }
     }
+    //右边菜单选项栏
     .shoppingmain-right{
         box-sizing: border-box;
         padding-left: 71px;
@@ -75,16 +126,12 @@
             display: flex;
             justify-content: space-between;
             i{
-                
+                border: solid 1px #ffffff;
                 img{
                     width: 100%;
                     border: solid 1px #ffffff;
                 }
-                img:hover{
-                    border: solid 1px #000000;
-                    background: burlywood;
-                    padding: 3px;
-                }
+                
             }
         }
         // 尺码
@@ -173,6 +220,7 @@
 }
 
 }
+// 精选搭配 分页器插件完成
 .shopping-2{
     overflow: hidden;
     h4{
@@ -181,7 +229,7 @@
         box-sizing: border-box;
         padding: 22px 0 0 228px;
     }
-    }
+    
     .shopping-2-main{
         display: flex;
         box-sizing: border-box;
@@ -283,6 +331,7 @@
                     margin: 0 11px 35px  0;
                     line-height: 32px;
                     text-align: center;
+                    background-color: lightgreen;
                 }
                 i:hover{
                     border: solid 1px #e1e1e1;
@@ -298,6 +347,7 @@
                     margin: 0 11px 35px  0;
                     line-height: 32px;
                     text-align: center;
+                    background-color: lightgreen;
                 }
             }
             button{
@@ -312,10 +362,11 @@
         }
         
     }
-// 您可能会喜欢
+}
+// 您可能会喜欢  需要调用数据
 .shopping-3{
     // background-color: pink;
-    overflow: hidden;
+    // overflow: hidden;
     h4{
         font-weight: bolder;
         padding: 32px 0 30px  238px;
@@ -341,9 +392,8 @@
             width: 230px;
             height: 430px;
             // background-color: lightgreen;
-            margin: 0 0 0 20px;
             border: solid 1px #ffffff;
-            overflow: hidden;
+            // overflow: hidden;
             z-index: 98;
             .swiper-wrapper{
                 // overflow: hidden;
@@ -455,5 +505,51 @@
         }
     }
 
+}
+.shopping-5{
+    box-sizing: border-box;
+    padding:  0 0 41px 0;
+    margin-left: 208px;
+    margin-right: 208px;
+    border-bottom: solid 1px red;
+    h4{
+        font-weight: bolder;
+        padding: 32px 0 30px  0;
+    }
+    .shopping-5-main{
+        display: flex;
+        .s5m-l{
+            width: 40%;
+            margin-right: 10%;
+            img{
+                border: 0;
+                vertical-align: middle;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+        .s5m-r{
+            .s5m-r1{
+                display: flex;
+                .iconfont{
+                    width: 60px;
+                    font-size: 45px;
+                }
+                .s5m-r2{
+
+                    h6{
+                        font-weight: border;
+                        font-size: 12px;   
+                        line-height: 16px; 
+                        color: #000;                    
+                    }
+                    p{
+                        font-size: 12px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
 }
 

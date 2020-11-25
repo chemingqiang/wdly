@@ -1,0 +1,88 @@
+#banner{
+    .banner-1{
+        overflow: hidden;
+    }
+    .banner-2{
+        overflow: hidden;
+        // background-color: lightgreen;
+        margin: 0 188px;
+    .banner-2o{
+            padding: 0 20px;
+                
+            // float: right;  
+            em{
+                line-height: 80px;
+                display: block;
+                padding-left: 1350px;
+            }
+           }
+    .banner-2t{
+        border-top: solid 1px #cccccc;
+        border-bottom: solid 1px #cccccc;
+        display: flex;
+        span{
+            line-height: 40px;
+            color: #666666;
+         }
+         .banner-2t-2{
+             margin: 0 750px 0 90px;
+             span{
+                 line-height: 40px;
+                 color: #222222;
+                 font-size: 12px;
+                 padding: 0 20px;
+             }
+             
+         }
+         .banner-2t-3{
+             line-height: 40px;
+             padding-left: 200px;
+         }
+
+        }
+    }
+    .banner-3{
+        // background-color: lightgreen;
+        margin: 0 188px;
+        padding-top: 39px;
+        height: 1000px;
+        .content{
+            width: 1298px;
+            overflow: hidden;
+           margin: 0 auto;
+          /* 高度不要给，作为父元素有子元素撑开情况下不要给高 可自由扩展 */
+          .goods{
+            width: 20%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding: 0 7px;
+            margin-bottom: 22px;
+            /* ⭐⭐ */
+            border: 1px solid #fff;
+                img{
+                width: 235px;
+              }
+                p{
+                color: #f40;
+                font-size: 18px;
+                padding: 6px 0;
+              }
+              div{
+                border: 1px solid #f40;
+                color: #f40;
+                font-size: 14px;
+                padding-left: 40px;
+                line-height: 30px;
+                padding-right: 6px;
+                cursor: pointer;
+              }
+          }
+          .goods:hover{
+            /* ⭐⭐ */
+            border-color: red;
+          }
+          
+        }
+    }
+}

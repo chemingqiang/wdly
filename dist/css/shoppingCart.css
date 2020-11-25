@@ -1,0 +1,70 @@
+.banner-3 {
+  margin: 0 auto;
+  height: 1000px;
+  background-color: lightgreen; }
+
+.header {
+  background-color: #eee; }
+
+.header h1 {
+  line-height: 80px;
+  text-align: center;
+  font-size: 30px; }
+
+.title {
+  line-height: 40px;
+  background-color: #ccc;
+  overflow: hidden;
+  margin-top: 30px; }
+
+.title span {
+  font-size: 14px;
+  color: #333; }
+
+.a1 {
+  margin-left: 100px; }
+
+.a2 {
+  margin-left: 450px; }
+
+.a3 {
+  margin-left: 100px; }
+
+.a4 {
+  margin-left: 100px; }
+
+.list li {
+  margin: 10px 0;
+  overflow: hidden; }
+
+.list li img {
+  width: 80px;
+  height: 80px;
+  float: left; }
+
+.list li h3 {
+  float: left;
+  margin-left: 10px;
+  width: 340px;
+  padding: 10px 0; }
+
+.list li p {
+  float: left;
+  margin-left: 120px;
+  width: 100px;
+  padding: 10px 0;
+  text-align: center; }
+
+.list li span {
+  float: left;
+  margin-left: 30px;
+  width: 100px;
+  padding: 10px 0;
+  text-align: center; }
+
+.list li em {
+  float: left;
+  margin-left: 30px;
+  width: 100px;
+  padding: 10px 0;
+  text-align: center; }
