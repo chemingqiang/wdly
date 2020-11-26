@@ -21,7 +21,7 @@
 				<!-- 头部第一块最左边 -->
 				<ul class="header-logo">
 					<li class="header-1-l">
-						<a href="#">
+						<a href="./index.html">
 							VICTORIA'S<br>SECRET
 						</a>
 					</li>
@@ -56,20 +56,20 @@
 				<div>
 					<div class="order-search">
 						<span>
-							<i class=" iconfont icon-dingdan"></i>
-							订单查询
+							
+							<a href="./shoppingCart.html"><i class=" iconfont icon-dingdan"></i>订单查询</a>
 						</span>
 						<span>
 							<i class=" iconfont icon-fujin"></i>
 							在线客服
 						</span>
+						<!-- 注册页给点击事件 -->
 						<span class="dengl">
-							<i class=" iconfont icon-wode"></i>
-							注册 登录
+							<a href="#"><i class=" iconfont icon-wode"></i>
+								注册 登录</a>
 						</span>
 						<span>
-							<i class=" iconfont icon-gouwuche"></i>
-							购物袋
+							<a href="./shoppingList.html"><i class=" iconfont icon-gouwuche"></i>购物袋</a>
 						</span>
 					</div>
 				</div>
@@ -221,21 +221,21 @@
 		<div id="denglu">
 			<div class="denglu-left">
 				<h4>登录</h4>
-				<p>手机号码：: <br><input type="text" placeholder="请输入手机号码"></p>
-				<p>手机验证码：<br><input type="text" placeholder="请输入短信验证码"><button style="display: inline-block; "><a href="#">获取验证码</a></button></p>
-				<p class="btn"><a href="#">使用密码登录</a></p>
+				<p>手机号码：: <br><input type="text" class="user" placeholder="请输入密码"></p>
+				<p>密码：<br><input type="text" class="pass" placeholder="请输入密码"></p>
+				<p><input type="checkbox" class="auto"> 记住密码</p>
 				<div class="dengluanniu"><a href="#">登录</a></div>
 				<a href="#"><img src="./img/CRM-banner-PC_03.9d9775f1e2ae7ef854505f813740a9a0.jpg" alt=""></a>
 			</div>
 			<div class="denglu-right">
-				<h4>注册</h4>
+				<h4>注册<i id="tui">X</i></h4>
 				<p>手机号码：: <br><input type="text" class="user" placeholder="请输入手机号码"></p>
 				<p>图形验证码：<br><input type="text" placeholder="请输入右侧图形的计算结果"><button><a href="#">放入验证码</a></button></p>
 				<p>手机验证码：<br><input type="text" placeholder="请输入短信验证码"><button><a href="#">获取验证码</a></button></p>
 				<p>密码: <br><input type="text" class="pass" placeholder="请输入密码"></p>
 				<p>密码: <br><input type="text" class="pass" placeholder="请输入确认密码"></p>
 				<input type="checkbox" style="width: 40px; height: 40px;"><i>本人确认收到网站条款和隐私政策,并同意victoria 's Secret按照隐私政策中的规定收集、使用并在全球范围内转移本人的个人信息，包括通过电子邮件和/或短信向本人发送广告．推广活动等信息。</i>
-				<div class="zhuce"><a href="#">注册</a></div>
+				<div class="register"><a href="#">注册</a></div>
 			</div>
 		</div>
 		<div class="mask"></div> <!--  遮罩层 -->
@@ -246,8 +246,18 @@
 				<a href="#">
 					<img src="./img/4E33BF2E07D7D4F41E0CE3825FDDDBA2.jpg" alt="">
 				</a>
-				<div>
-					<a href="#">欢迎选购&gt;</a>
+				<div class="jishidao">
+					<span>24小时爆秒</span>
+					<span>00:00</span>
+					<span>抢购中</span>
+					<span>|</span>
+					<span>距结束</span>
+					<span>00</span>
+					<span>时</span>
+					<span>00</span>
+					<span>分</span>
+					<span>00</span>
+					<span>秒</span>
 				</div>
 			</div>
 			<!-- 空白 -->
@@ -468,9 +478,9 @@
 	</div>
 	<script src="./js/jquery-1.8.3.js"></script><!-- jquery插件 -->
 	<script src="./js/swiper.js"></script>
-	<script src="./js/index.js"></script><!-- 事件js -->
 	<script src="./js/utils.js"></script>
 	<script src="./js/public.js"></script>
+	<script src="./js/index.js"></script><!-- 事件js -->
 <script>        
 	var mySwiper = new Swiper ('.swiper-container', {
 		direction: 'horizontal', // 垂直切换选项

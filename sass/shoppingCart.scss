@@ -1,72 +1,176 @@
-.banner-3{
-    margin: 0 auto;
-    height: 1000px;
-    background-color: lightgreen;
-  }
-  .header{
-    background-color: #eee;
-  }
-  .header h1{
-    line-height: 80px;
-    text-align: center;
-    font-size: 30px;
-  }
-  .title{
-    line-height: 40px;
-    background-color: #ccc;
-    overflow: hidden;
-    margin-top: 30px;
-  }
-  .title span{
-    font-size: 14px;
-    color: #333;
-  }
-  .a1{
-    margin-left: 100px;
-  }
-  .a2{
-    margin-left: 450px;
-  }
-  .a3{
-    margin-left: 100px;
-  }
-  .a4{
-    margin-left: 100px;
-  }
-  .list li{
-    margin: 10px 0;
-    overflow: hidden;
-  }
-  .list li img{
-    width: 80px;
-    height: 80px;
-    float: left;
-  }
-  .list li h3{
-    float: left;
-    margin-left: 10px;
-    width: 340px;
-    padding: 10px 0;
-  }
-  .list li p{
-    float: left;
-    margin-left: 120px;
-    width: 100px;
-    padding: 10px 0;
-    text-align: center;
-  }
-  .list li span{
-    float: left;
-    margin-left: 30px;
-    width: 100px;
-    padding: 10px 0;
-    text-align: center;
-  }
-  .list li em{
-    float: left;
-    margin-left: 30px;
-    width: 100px;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
+.bigbox {
+  width: 960px;
+  height: 1000px;
+  margin: 10px auto 50px;
+}
+.top {
+  width: 960px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.top .allcheck {
+  width: 11px;
+  height: 11px;
+  margin: 0 6px 0 10px;
+}
+.top b {
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.top .first {
+  width: 350px;
+}
+
+.spbox {
+  width: 960px;
+  border: 1px solid #ccc;
+}
+.shop {
+  width: 960px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.shop .only {
+  width: 11px;
+  height: 11px;
+  margin: 0 30px 0 10px;
+}
+.shop .sp {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.shop .sp img {
+  width: 80px;
+  height: 80px;
+}
+.shop i {
+  width: 130px;
+}
+.shop button {
+  width: 30px;
+  height: 30px;
+}
+.shop .num {
+  text-align: center;
+  width: 26px;
+  height: 26px;
+}
+.js1 {
+  width: 960px;
+  height: 44px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+.js1 .b1 {
+  margin: 0 600px 0 70px;
+}
+.js2 {
+  width: 960px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.js2 .del {
+  font-weight: bold;
+  margin: 0 50px;
+}
+.js2 b span {
+  color: red;
+  font-weight: bold;
+}
+.js2 div {
+  text-align: center;
+  margin: 0 20px 0 410px;
+}
+.js2 div p span {
+  color: red;
+  font-size: 18px;
+}
+.js2 button {
+  width: 116px;
+  height: 38px;
+  background-color: #ff2832;
+  border-radius: 4px;
+  border: 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+.likebox {
+  width: 1000px;
+  border: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+.likebox .h-1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 30px 20px;
+}
+.likebox .sixbox {
+  width: 960px;
+  display: flex;
+  justify-content: space-around;
+}
+.sixbox .smbox {
+  text-align: center;
+  width: 180px;
+}
+.smbox figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.smbox figure img {
+  width: 160px;
+  height: 160px;
+}
+.smbox figure .add {
+  position: absolute;
+  bottom: -24px;
+  width: 180px;
+  height: 24px;
+  background-color: red;
+  color: #fff;
+  line-height: 24px;
+  transition: all 0.3s linear;
+}
+.smbox figure:hover .add {
+  transform: translate(0,-24px);
+}
+.smbox figcaption {
+  width: 180px;
+  height: 30px;
+  font-size: 12px;
+  text-align: left;
+}
+.smbox .danj {
+  color: red;
+}
+.smbox b {
+  font-size: 12px;
+}
+.smbox b img {
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+}
+.smbox b span {
+  color: rgb(143, 143, 255);
+}
+
+

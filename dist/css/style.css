@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #app {
   position: relative;
   overflow: hidden;
@@ -44,14 +45,17 @@
     #header .header-1 .order-search {
       font: 12px;
       color: #fff; }
-      #header .header-1 .order-search span {
-        line-height: 45px;
-        padding: 0 10px;
-        display: inline-block;
-        height: 45px;
-        cursor: pointer; }
-      #header .header-1 .order-search span:hover {
-        background-color: #000000; }
+      #header .header-1 .order-search a {
+        font: 12px;
+        color: #fff; }
+        #header .header-1 .order-search a span {
+          line-height: 45px;
+          padding: 0 10px;
+          display: inline-block;
+          height: 45px;
+          cursor: pointer; }
+        #header .header-1 .order-search a span:hover {
+          background-color: #000000; }
   #header .header-2 .menu-info {
     width: 972px;
     margin: 0 auto;
@@ -132,19 +136,53 @@
   z-index: 98; }
   #banner .banner-1 {
     padding: 12px 0 0 0;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    position: relative; }
     #banner .banner-1 a {
       display: block; }
       #banner .banner-1 a img {
         width: 100%;
         vertical-align: middle; }
-    #banner .banner-1 div {
+    #banner .banner-1 .jishidao {
+      width: 100%;
+      height: 60px;
+      background-image: linear-gradient(140deg, #C47DEF 0%, #EE4587 99%);
       position: absolute;
-      left: 486px;
-      top: 500px; }
-      #banner .banner-1 div a {
-        display: block;
-        color: white; }
+      left: 0;
+      bottom: 0; }
+    #banner .banner-1 .jishidao > span {
+      display: inline-block; }
+    #banner .banner-1 .jishidao > span:nth-of-type(1) {
+      font: 20px/60px "微软雅黑";
+      color: white;
+      margin-left: 44px; }
+    #banner .banner-1 .jishidao > span:nth-of-type(2) {
+      font: 20px/60px "微软雅黑";
+      color: white;
+      margin-left: 10px; }
+    #banner .banner-1 .jishidao > span:nth-of-type(3) {
+      font: 22px/60px "微软雅黑";
+      color: white;
+      margin-left: 10px; }
+    #banner .banner-1 .jishidao > span:nth-of-type(4) {
+      font: 24px/60px "微软雅黑";
+      color: white;
+      margin-left: 10px; }
+    #banner .banner-1 .jishidao > span:nth-of-type(5) {
+      font: 16px/60px "微软雅黑";
+      color: white;
+      margin-left: 10px; }
+    #banner .banner-1 .jishidao > span:nth-of-type(6) {
+      margin-left: 10px;
+      padding: 6px;
+      background-color: #FFFDEF;
+      color: #EE4587; }
+    #banner .banner-1 .jishidao > span:nth-of-type(7), #banner .banner-1 .jishidao > span:nth-of-type(9), #banner .banner-1 .jishidao > span:nth-of-type(11) {
+      color: white; }
+    #banner .banner-1 .jishidao > span:nth-of-type(8), #banner .banner-1 .jishidao > span:nth-of-type(10) {
+      padding: 6px;
+      background-color: #FFFDEF;
+      color: #EE4587; }
   #banner .kong a {
     display: block; }
     #banner .kong a img {

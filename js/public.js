@@ -130,16 +130,6 @@ function rand(min,max){
 }
 
 
-
-/*
-作用:通过id获取元素
-参数:id
-返回值:DOM节点
-*/
-function $id(id){
-	return document.getElementById(id);
-}
-
 /*
 作用:获取窗口可视区域的宽高
 参数:无
@@ -176,20 +166,6 @@ function scroll(){
 	}
 }
 
-function getElements(className){
-		//定义一个数组,用于存放符合条件的DOM节点
-		var result = [];
-		//第一步:获取页面上的所有标签
-		var all = document.getElementsByTagName('*');
-		//第二步:筛选其中类名叫one的元素
-		for(var i=0;i<all.length;i++){
-			if(all[i].className==className){
-				//如果循环到的标签的类名和传入的类名一致,说明这个标签就是符合条件的
-				result.push(all[i])
-			}
-		}
-		return result;
-}
 
 //封装一个getStyle方法用于获取元素的样式
 function getStyle(element,attr){
@@ -209,12 +185,6 @@ function addEvent(dom,type,fn){
 	}
 }
 
-
-function trim(str){
-	var reg = /(^\s+)|(\s+$)/g
-	str = str.replace(reg,"")
-	return str;
-}
 
 
 
@@ -261,107 +231,7 @@ function trim(str){
 // 	},30)
 // }
 
-//思路:封装一个缓动函数,可以实现指定元素,指定属性运动到指定目标位置,要求属性是数值型的,单位是px
-//这个函数用于源代码的01-03题目
-// function animate(dom,attr,target,fn){
-// 	clearInterval(dom.timer);
-// 	dom.timer = setInterval(function(){
-// 		//获取当前值
-// 		var current = getStyle(dom,attr);
-// 		if(attr=="opacity"){
-// 			//如果是透明度,值是小数,要乘以100
-// 			current *= 100;
-// 		}else{
-// 			current = parseInt(current);//取整,去除px单位
-// 		}
-// 		//设置速度
-// 		var speed = (target - current)/10;
-// 		speed = speed>0?Math.ceil(speed):Math.floor(speed);
-// 		//计算下一次的值
-// 		var next = current + speed;
-// 		if(attr=="zIndex"){
-// 			next = target;
-// 		}
-// 		//判断是否到达目标值
-// 		if(next==target){
-// 			if(attr=="opacity"){
-// 				dom.style.opacity = target/100;
-// 				dom.style.filter = "alpha(opacity="+target+")";//ie678
-// 			}else{
-// 				dom.style[attr] = target + "px"
-// 			}	
-// 			if(fn){
-// 				fn();//fn是动画完成以后执行的函数
-// 			}				
-// 			clearInterval(dom.timer);
-// 		}else{
-// 			//元素定位
-// 			if(attr=="opacity"){
-// 				dom.style.opacity = next/100;
-// 				dom.style.filter = "alpha(opacity="+next+")";//ie678
-// 			}else{
-// 				dom.style[attr] = next + "px";
-// 			}
-// 		}
-		
-// 	},20)
-// }
 
-//这个函数用于源代码的04以后的题目
-function animate(dom,json,fn){		
-		/*
-		dom:要缓动的节点
-		json:就是要执行缓动的键值对{"width":600,"height":300,"left":300,"top":400}
-		fn:是动画完成后的回调函数
-		*/		
-		clearInterval(dom.timer);//要用定时器先清定时器
-		dom.timer = setInterval(function(){
-			//设定标志值
-			var flag = 1;
-
-			for(var attr in json){
-				//获取当前值
-				var current = getStyle(dom,attr);
-				if(attr=="opacity"){
-					current *=100;//透明度需要乘以100					
-				}else{
-					current = parseInt(current);
-				}
-				//获取目标值
-				var target = json[attr];
-				//设置速度
-				var speed = (target- current)/10;
-				speed = speed>0?Math.ceil(speed):Math.floor(speed);
-				//计算下一个位置
-				var next = current + speed;
-				if(attr == "zIndex"){
-					next = target;
-				}
-				//判断是否到达目标位置
-				if(next!=target){
-					flag = 0;
-				}	
-				//元素定位
-				if(attr=="opacity"){
-					dom.style.opacity = next/100;
-					dom.style.filter = "alpha(opacity="+next+")"
-				}else if(attr=="zIndex"){
-					dom.style[attr] = next;
-				}else{
-					dom.style[attr] = next+"px";
-				}
-			}
-	
-	
-			if(flag){
-				if(fn){
-					fn();
-				}
-				clearInterval(dom.timer);
-			}
-	
-		},20)
-	}
 //写一个函数,判断一个数是否是素数,如果是素数,返回true,如果不是素数,返回false
 function isPrimeNumber(number){
 	//如果number能被2到number-1中的任意一个整除,都不是素数,如果一个都不能整除,就是素数
@@ -374,11 +244,6 @@ function isPrimeNumber(number){
 	return true;
 }
 
-
-// 返回指定id的元素
-function $id(id){
-	return document.getElementById(id);
-}
 
 
 //通过类名获取元素
@@ -463,11 +328,6 @@ function getButton(e){
 		}
 	}
 }
-
-//去除str前后空格
-function trim(str){
-	return str.replace(/(^\s+)|(\s+$)/g,"")
-};
 
 
 //获取页面的滚动距离
@@ -664,34 +524,3 @@ function formatDate(times){
     return year+"-"+month+"-"+date+" "+hour+":"+minute+":"+second;
 }
 
-//获取滚动的距离{top:"",left:""}
-
-function getScroll(){
-    if(window.pageYOffset){
-        return {
-            top:window.pageYOffset,
-            left:window.pageXOffset
-        }
-    }else if(document.documentElement.scrollLeft){
-        return {
-            top:document.documentElement.scrollTop,
-            left:document.documentElement.scrollLeft
-        }
-    }else{
-        return {
-            top:document.body.scrollTop,
-            left:document.body.scrollLeft
-        }
-    }
-}
-//获取指定dom的指定样式值
-function getStyle(dom,attr){
-    if(window.getComputedStyle){
-        //如果window.getComputedStyle不是undefined,说明是非IE浏览器
-        return window.getComputedStyle(dom,null)[attr];
-    }else{
-        //如果window.getComputedStyle是undefined,说明是IE浏览器
-        return dom.currentStyle[attr]
-    }
-    
-}

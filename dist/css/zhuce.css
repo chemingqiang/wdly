@@ -15,7 +15,8 @@
     border-right: solid 1px black;
     box-sizing: border-box;
     margin: 50px  0  20px  70px;
-    padding-right: 90px; }
+    padding-right: 90px;
+    float: left; }
     #denglu .denglu-left p {
       width: 100%;
       box-sizing: border-box;
@@ -35,24 +36,35 @@
     #denglu .denglu-left img {
       width: 300px; }
   #denglu .denglu-right {
+    width: 360px;
     box-sizing: border-box;
     margin: 50px  70px  20px  0;
-    padding-left: 50px; }
+    padding-left: 50px;
+    float: right; }
+    #denglu .denglu-right h4 {
+      display: flex; }
+      #denglu .denglu-right h4 #tui {
+        font-size: 20px;
+        padding-left: 150px; }
     #denglu .denglu-right p {
       box-sizing: border-box;
+      width: 87px;
       padding: 10px  0; }
       #denglu .denglu-right p input {
-        height: 25px; }
+        height: 25px;
+        float: left; }
       #denglu .denglu-right p button {
-        width: 80px;
-        height: 25px; }
-    #denglu .denglu-right .zhuce {
+        width: 86px;
+        height: 25px;
+        float: right; }
+    #denglu .denglu-right .register {
       width: 250px;
       height: 35px;
       background-color: pink;
       line-height: 35px;
       text-align: center;
-      margin: 20px 0; }
+      margin: 20px 0;
+      float: left; }
 
 .mask {
   position: absolute;

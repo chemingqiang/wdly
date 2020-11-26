@@ -1,19 +1,15 @@
 //两个东西 第一个东西来到这个页面加载当前商品数据把它渲染出来第二个东西是每个商品加入购物车的时候把数据编号code存到本地存储
 //ready放法
+// window.οnlοad=function(){ 
 $(function (){
-
-  // 获取商品列表数据  需要json接口
   $.ajax({
-    url: '../data/goods.json',
-    type: 'get',
-    dataType: 'json',
-    //请求拿到数据了才获取到编号
-    success: function (json){
-      // console.log(json)
-      //接下来展示渲染数据  根据json给的数据结构
-      var goodsStr = '' //字符串为空累加到上面
-      // $.each遍历数组  第一个你要遍历的数组  第二个函数（第二个每一个对象每一个数据商品编号）
-      $.each(json,function (index,item){
+    url: "../data/goods.json",
+    type: "get",
+    dataType:'json',
+    success:function(json){
+      console.log(json);
+      var goodsStr = '';
+      $.each(json,function(index,item){
         goodsStr += `<div class="goods">
           <img src="${item.imgurl}" alt="">
           <p>${item.price}</p>
@@ -21,10 +17,12 @@ $(function (){
           <div code="${item.code}">立即订购</div>
         </div>`
       })
-      // 添加到content里面去
       $('.content').html(goodsStr)
+
     }
   })
+
+  
 
   // 点击加入购物车  委托（绑定点击事件  动态元素）第一个事件类型 第二个触发事件的元素  第三个事件处理函数
   //点击按钮之后需要储存当前用户点击哪个商品加入购物车
@@ -33,11 +31,9 @@ $(function (){
     //商品的code编号存下来  获取属性
     var code = $(this).attr('code')
     
-    // localStorage  key = value  存值
-              //  goods = [{code:'abc1',num:1},{code:'abc2',num:2}]
+
     // 判断本地存储是否有数据
     if (localStorage.getItem('goods')) {
-      //说明之前有存储过商品   取出来数组  json解析成对象
       var goodsArr = JSON.parse( localStorage.getItem('goods') )
     } else {
       var goodsArr = []
@@ -64,7 +60,6 @@ $(function (){
 
     // 如果购物车没有当前选中的商品，添加一条数据
     if (!hasGoods) {
-      // var objStr = JSON.stringify({code:code,num:1})
       //应该变成对象，不应该是字符串  编号  数量
       goodsArr.push({code:code,num:1})
     }
@@ -77,3 +72,31 @@ $(function (){
   })
 
 })
+
+
+
+
+
+var nav = document.querySelector(".header-3");
+var mav = document.querySelector('.header-1');
+  window.onscroll = function(){
+    
+    //滚动条向上滚走的距离超过了top的高度的时候
+    //导航nav开始吸顶
+      //nav固定定位 
+      //top保持在0；
+    //滚动条向上滚走的距离低于top的高度的时候
+      //nav回到原来 的位置
+      //取消定位
+    var stop = document.documentElement.scrollTop
+    if(stop >= 168){
+      nav.style="position:fixed ; top:45px; "
+      mav.style="position:fixed ; top:0; "
+      
+    }else{
+      nav.style.position = "static";
+      mav.style.position = "static";
+    }
+    
+  }
+
