@@ -37,7 +37,6 @@ task('sass', async ()=>{
   .pipe(dest('./dist/css'))
   .pipe(load.connect.reload())
 })
-
 // 监听文件变化
 task('watch', async ()=>{
   watch('./pages/*.html',series('html'))
